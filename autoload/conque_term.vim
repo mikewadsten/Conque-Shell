@@ -754,7 +754,7 @@ function! conque_term#set_mappings(action) "{{{
             sil exe 'i' . map_modifier . 'map <silent> <buffer> <End> <C-o>:' . s:py . ' ' . b:ConqueTerm_Var . '.write_vk(' . s:windows_vk.VK_END . ')<CR>'
         endif
     else
-        sil exe 'i' . map_modifier . 'map <silent> <buffer> <BS>'
+        "sil exe 'i' . map_modifier . 'map <silent> <buffer> <BS>'
         sil exe 'i' . map_modifier . 'map <silent> <buffer> <Space>'
         sil exe 'i' . map_modifier . 'map <silent> <buffer> <S-BS>'
         sil exe 'i' . map_modifier . 'map <silent> <buffer> <S-Space>'
